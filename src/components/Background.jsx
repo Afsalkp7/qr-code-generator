@@ -1,7 +1,14 @@
 import React from "react";
 import InputBox from "./InputBox";
+import UserShow from "./UserShow";
 
-const Background = () => {
+const Background = ({search,setSearch}) => {
+    if ( search == 1 ) {
+        return (
+            <UserShow />
+            
+        )
+    }
   return (
     <>
       <div className="flex justify-center">
@@ -10,7 +17,7 @@ const Background = () => {
       <div className="flex justify-center">
         <span className="text-white text-center font-sans my-5"><span className="font-bold">Create QR </span><br /> for your instagram account !</span>
       </div>
-      <InputBox />
+      <InputBox search={search} setSearch={setSearch}/>
       <div className="flex justify-center pt-10 ">
         <span className="text-gray-400 font-sans text-sm text-center">Your datas are safe . Don't be scared!! <br /> created by Afsal Kp    </span>
       </div>

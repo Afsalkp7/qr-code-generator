@@ -1,12 +1,14 @@
+import { useState } from 'react'
 import Background from './components/Background'
-// import QRCode from "react-qr-code";
+
 
 function App() {
 
+  const [search , setSearch] = useState(0)
+
   return (
     <>
-    <Background />
-      {/* <QRCode value="https://www.instagram.com/afz_kp/" /> */}
+    <Background search={search} setSearch={setSearch}/>
     </>
   )
 }
