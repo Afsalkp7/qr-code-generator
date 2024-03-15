@@ -26,7 +26,7 @@ const Background = ({ search, setSearch }) => {
       </div>
       <InputBox search={search} setSearch={setSearch} userId={userId} setUserId={setUserId}/>
       <div className="flex justify-center pt-10 ">
-        <span className="text-gray-400 font-sans text-sm text-center">Your datas are safe . Don't be scared!! <br /> created by Afsal Kp    </span>
+        <span className="text-gray-400 font-sans text-sm text-center">Your data are safe . Don't be scared!! <br /> created by <a href="https://github.com/Afsalkp7">Afsal Kp</a>    </span>
       </div>
     </>
   );
