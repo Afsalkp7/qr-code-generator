@@ -1,11 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import InputBox from "./InputBox";
 import UserShow from "./UserShow";
 
-const Background = ({search,setSearch}) => {
-    if ( search == 1 ) {
+const Background = ({ search, setSearch }) => {
+    const [userId , setUserId] = useState("")
+    if ( search === 1 ) {
+        
         return (
-            <UserShow />
+            <>
+            <div className="relative">
+                <UserShow userId={userId}/>
+            </div>
+
+            </>
             
         )
     }
@@ -17,7 +24,7 @@ const Background = ({search,setSearch}) => {
       <div className="flex justify-center">
         <span className="text-white text-center font-sans my-5"><span className="font-bold">Create QR </span><br /> for your instagram account !</span>
       </div>
-      <InputBox search={search} setSearch={setSearch}/>
+      <InputBox search={search} setSearch={setSearch} userId={userId} setUserId={setUserId}/>
       <div className="flex justify-center pt-10 ">
         <span className="text-gray-400 font-sans text-sm text-center">Your datas are safe . Don't be scared!! <br /> created by Afsal Kp    </span>
       </div>
