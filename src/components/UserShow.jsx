@@ -37,7 +37,7 @@ export default function UserShow({userId}) {
         setUserData(data);
       })
       .catch(error => {
-        setError("Error fetching data");
+        setError("User not found or user id is incorrect");
         console.error('Error fetching data:', error);
       })
       .finally(() => {
