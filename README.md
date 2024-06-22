@@ -6,3 +6,4 @@ used technologies
 - react js
 - tailwind css
 - Rapid api's instagram free api
+⚡⚡⚡⚡⚡⚡⚡⚡
